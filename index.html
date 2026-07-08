@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Desafio Longevidade | Mitos e Verdades</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@700;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<main class="container">
+
+<header class="hero">
+
+<div class="hero-icon">
+🧠
+</div>
+
+<h1>
+Desafio Longevidade
+</h1>
+
+<p class="subtitle">
+Descubra o que é mito e o que é verdade sobre o envelhecimento saudável.
+</p>
+
+</header>
+
+<section class="progress-area">
+
+<div class="progress-info">
+
+<span id="progressText">
+Pergunta 1 de 5
+</span>
+
+<span id="scoreText">
+0 acertos
+</span>
+
+</div>
+
+<div class="progress-bar">
+
+<div id="progressFill">
+
+</div>
+
+</div>
+
+</section>
+
+<section id="quizCard" class="card">
+
+<div class="question-number">
+
+Pergunta
+
+</div>
+
+<h2 id="questionText">
+
+Carregando pergunta...
+
+</h2>
+
+<div id="buttonsArea" class="buttons">
+
+<button
+class="btn btn-mito"
+onclick="responder(false)">
+
+❌
+Mito
+
+</button>
+
+<button
+class="btn btn-verdade"
+onclick="responder(true)">
+
+✅
+Verdade
+
+</button>
+
+</div>
+
+<div
+id="feedbackArea"
+class="feedback hidden">
+
+<div id="feedbackIcon">
+
+</div>
+
+<h3 id="feedbackTitle">
+
+</h3>
+
+<p id="feedbackExplanation">
+
+</p>
+
+<button
+id="nextButton"
+class="btn-next"
+onclick="proximaPergunta()">
+
+Próxima →
+
+</button>
+
+</div>
+
+</section>
+
+<section
+id="resultCard"
+class="card hidden">
+
+<div
+class="result-emoji">
+
+🏆
+
+</div>
+
+<h2>
+
+Resultado
+
+</h2>
+
+<p
+id="finalScore"
+class="final-score">
+
+</p>
+
+<p
+id="finalMessage"
+class="final-message">
+
+</p>
+
+<div
+id="medalArea">
+
+</div>
+
+<button
+class="btn-next"
+onclick="mostrarMensagemFinal()">
+
+Continuar →
+
+</button>
+
+</section>
+
+<section
+id="messageCard"
+class="card hidden">
+
+<div class="message-icon">
+
+💚
+
+</div>
+
+<h2>
+
+Parabéns!
+
+</h2>
+
+<p>
+
+Mais importante do que acertar todas as respostas é continuar aprendendo.
+
+Envelhecer é um processo natural da vida e pode ser vivido com saúde, autonomia, vínculos afetivos e qualidade de vida.
+
+Cada conversa, caminhada, leitura, atividade física e momento compartilhado fortalece o corpo, a mente e o coração.
+
+Continue cuidando de você e incentive outras pessoas a fazerem o mesmo.
+
+</p>
+
+<button
+class="btn-restart"
+onclick="reiniciarQuiz()">
+
+🔄
+Jogar novamente
+
+</button>
+
+</section>
+
+</main>
+
+<canvas
+id="confetti">
+
+</canvas>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
